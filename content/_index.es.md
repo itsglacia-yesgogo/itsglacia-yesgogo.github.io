@@ -1,9 +1,9 @@
 ---
-title: "GLACIAS"
+title: "itsglacia.yesgogo"
 description: "Exploro. Creo. Conecto."
-hero_kicker: "Hola, soy Yes — también conocida como Glacia."
-hero_text: "Trabajo en marketing y proyectos, y nunca dejo de explorar el mundo. Me gusta partir de una idea y hacerla realidad, paso a paso — a través de contenido, marketing, eventos e intercambio internacional."
-fields: "Marketing｜Contenido｜Eventos｜Internacional"
+hero_kicker: "Hola, soy Glacia."
+hero_text: "Trabajo entre marketing, deporte, contenido y comunidad. Convierto experiencias internacionales e ideas en proyectos, historias y conexiones."
+fields: "Marketing｜Deporte｜Contenido｜Comunidad"
 cta:
   - text: "Sobre mí"
     url: "/about/"
@@ -17,12 +17,12 @@ whatido_title: "Qué hago"
 whatido:
   - title: "Marketing"
     desc: "Marketing de marca · redes sociales · campañas · contenido"
-  - title: "Eventos"
-    desc: "Planificación de eventos · ejecución de proyectos · comunidad · eventos internacionales"
+  - title: "Deporte"
+    desc: "Marketing deportivo · fitness · proyectos deportivos internacionales"
   - title: "Contenido"
     desc: "Video corto · contenido social · storytelling · marca personal"
-  - title: "Internacional"
-    desc: "Intercambios · programas juveniles · proyectos interculturales · community building"
+  - title: "Comunidad"
+    desc: "Eventos · networking · intercambio internacional · creación de comunidades"
 journey_title: "Mi camino"
 journey:
   - year: "2023"
@@ -40,5 +40,5 @@ journey:
   - year: "2026"
     what: "Youth Billion Project × España"
 follow_title: "Sigue mi camino"
-follow_text: "Viajes, proyectos y la vida diaria entre zonas horarias — todo aparece primero en Instagram."
+follow_text: "Viajes, proyectos, deporte y vida entre zonas horarias — todo aparece primero en Instagram."
 ---
