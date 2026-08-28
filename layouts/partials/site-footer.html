@@ -1,0 +1,16 @@
+<footer class="g-footer">
+  <div class="g-container g-footer-inner">
+    <div class="g-footer-brand">
+      <span class="g-logo g-logo-footer">GLACIAS</span>
+      <p>{{ .Site.Language.Params.description | default .Site.Params.description }}</p>
+    </div>
+    <div class="g-footer-links">
+      <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram — @itsglacia_yesgogo</a>
+      <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn — glacia-hung</a>
+      <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+    </div>
+  </div>
+  <div class="g-container g-footer-bottom">
+    © {{ now.Year }} GLACIAS
+  </div>
+</footer>

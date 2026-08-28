@@ -1,0 +1,237 @@
+/* ============================================================
+   GLACIAS — Lalita-inspired layout, sky palette.
+   Blue & black drawn from the flight photo; yellow kept as the
+   sunset accent. Fonts: Kanit (display) + Nunito.
+   ============================================================ */
+
+:root {
+  --purple: #35618e;        /* steel blue (headings, links) */
+  --purple-dark: #24466b;   /* deeper blue */
+  --pink: #7fb6d9;          /* sky blue (accents, bullets) */
+  --pink-soft: #e9f2f8;     /* pale sky (light bands) */
+  --yellow: #ffe17f;        /* sunset yellow (buttons, marks) */
+  --char: #10151f;          /* near-black navy */
+  --white: #fefefe;
+  --body: #3d4450;
+}
+
+/* ---------- base ---------- */
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Nunito", "Helvetica Neue", Arial, sans-serif !important;
+  color: var(--body);
+  background: var(--white);
+  font-size: 17px;
+  line-height: 1.7;
+}
+.g-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+h1, h2, h3, .g-logo {
+  font-family: "Kanit", "Arial Black", sans-serif !important;
+}
+
+/* hide leftover ananke chrome that our layouts don't use */
+main.pb7 { padding-bottom: 0 !important; }
+
+/* ---------- top bar ---------- */
+.g-topbar {
+  background: var(--char);
+  font-size: 0.85rem;
+  padding: 0.35rem 0;
+}
+.g-topbar-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+.g-topbar a { color: var(--white); text-decoration: none; }
+.g-topbar-social a { color: var(--yellow); margin-left: 1.2rem; font-weight: 700; }
+.g-topbar a:hover { text-decoration: underline; }
+
+/* ---------- nav ---------- */
+.g-nav {
+  background: var(--white);
+  box-shadow: 0 2px 12px rgba(16, 21, 31, 0.14);
+  position: sticky; top: 0; z-index: 50;
+}
+.g-nav-inner {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 0.5rem;
+  padding-top: 0.65rem; padding-bottom: 0.65rem;
+}
+.g-logo {
+  font-weight: 800; font-size: 1.5rem; letter-spacing: 0.06em;
+  color: var(--purple); text-decoration: none;
+}
+.g-menu { display: flex; align-items: center; flex-wrap: wrap; gap: 0.2rem; }
+.g-menu > a {
+  color: var(--purple); text-decoration: none; font-weight: 700;
+  font-size: 0.95rem; padding: 0.4rem 0.7rem; border-radius: 4px;
+}
+.g-menu > a:hover { background: var(--yellow); color: var(--char); }
+.g-langs { margin-left: 0.8rem; }
+.g-langs a {
+  color: #999; font-size: 0.8rem; font-weight: 700; text-decoration: none;
+  text-transform: uppercase; padding: 0.2rem 0.4rem; border-radius: 4px;
+}
+.g-langs a:hover { background: var(--pink); color: var(--char); }
+.g-nav { border-bottom: 3px solid var(--char); }
+
+/* ---------- hero: the airplane colors the whole top ---------- */
+.g-hero {
+  background-size: cover;
+  background-position: center 65%;
+  background-repeat: no-repeat;
+}
+.g-hero-inner {
+  display: flex; align-items: center;
+  min-height: 72vh;
+  padding-top: 5rem; padding-bottom: 5rem;
+}
+.g-hero-text { max-width: 40rem; }
+.g-kicker {
+  font-weight: 700; color: var(--yellow); margin: 0 0 0.6rem; font-size: 1.1rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+.g-hero-title {
+  color: var(--white);
+  font-weight: 800; text-transform: uppercase;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.08; margin: 0 0 1.2rem; letter-spacing: 0.01em;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+}
+.g-hero-sub {
+  margin: 0 0 1rem; max-width: 34rem; color: #e8eef5;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+.g-hero-fields {
+  font-weight: 800; color: var(--pink); margin: 0 0 1.6rem;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+.g-hero-ctas { display: flex; gap: 0.8rem; flex-wrap: wrap; margin: 0; }
+
+/* ---------- buttons ---------- */
+.g-btn {
+  display: inline-block;
+  background: var(--yellow); color: var(--char) !important;
+  font-family: "Kanit", sans-serif; font-weight: 700;
+  padding: 0.55rem 1.3rem; border-radius: 4px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 0 rgba(51, 51, 51, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.g-btn:hover { transform: translateY(2px); box-shadow: 0 2px 0 rgba(51, 51, 51, 0.25); }
+.g-btn-big { font-size: 1.2rem; padding: 0.7rem 1.7rem; }
+
+/* ---------- dark quote band ---------- */
+.g-band-dark { background: var(--char); padding: 1.6rem 0; }
+.g-band-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+.g-quote {
+  color: var(--yellow); font-family: "Kanit", sans-serif;
+  font-weight: 600; font-style: italic; font-size: 1.35rem; margin: 0;
+}
+
+/* ---------- sections & headings ---------- */
+.g-section { padding: 3.5rem 0; }
+.g-h2 {
+  color: var(--purple); text-transform: uppercase; font-weight: 800;
+  font-size: 2rem; margin: 0 0 2rem; position: relative; display: inline-block;
+}
+.g-h2::after {
+  content: ""; position: absolute; left: 0; bottom: 0.15em;
+  width: 100%; height: 0.35em; background: var(--yellow);
+  z-index: -1; border-radius: 3px;
+}
+.g-h2-light { color: var(--white); }
+.g-h2-light::after { background: var(--pink); }
+
+/* ---------- what-i-do cards ---------- */
+.g-cards {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.3rem;
+}
+@media (max-width: 900px) { .g-cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .g-cards { grid-template-columns: 1fr; } }
+.g-card {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(36, 70, 107, 0.18);
+  padding: 1.4rem 1.3rem;
+  border-top: 6px solid var(--pink);
+  transition: transform 0.18s ease;
+}
+.g-card:nth-child(2n) { border-top-color: var(--purple); }
+.g-card:hover { transform: translateY(-6px); }
+.g-card h3 {
+  color: var(--purple); font-weight: 700; text-transform: uppercase;
+  font-size: 1.1rem; margin: 0 0 0.5rem;
+}
+.g-card p { margin: 0; font-size: 0.92rem; }
+
+/* ---------- journey timeline ---------- */
+.g-journey { background: var(--char); padding: 3.5rem 0 4rem; }
+.g-timeline { border-left: 4px solid var(--yellow); margin-left: 0.5rem; padding-left: 1.6rem; }
+.g-tl-item { position: relative; margin-bottom: 1.1rem; display: flex; gap: 1rem; align-items: baseline; flex-wrap: wrap; }
+.g-tl-item::before {
+  content: ""; position: absolute; left: -2.05rem; top: 0.35em;
+  width: 0.8rem; height: 0.8rem; background: var(--yellow); border-radius: 50%;
+}
+.g-tl-year {
+  font-family: "Kanit", sans-serif; font-weight: 800;
+  background: var(--yellow); color: var(--char);
+  padding: 0.05rem 0.6rem; border-radius: 4px; font-size: 0.95rem;
+}
+.g-tl-what { color: var(--white); font-weight: 600; }
+
+/* ---------- follow band ---------- */
+.g-follow { background: var(--pink-soft); text-align: center; padding: 3.5rem 0; }
+.g-follow p { max-width: 36rem; margin: 0 auto 1.6rem; }
+
+/* ---------- footer ---------- */
+.g-footer { background: var(--char); color: #bbb; margin-top: 0; }
+.g-footer-inner {
+  display: flex; justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+  padding-top: 2.6rem; padding-bottom: 1.6rem;
+}
+.g-logo-footer { color: var(--yellow); font-size: 1.3rem; }
+.g-footer-brand p { margin: 0.4rem 0 0; font-size: 0.9rem; max-width: 20rem; }
+.g-footer-links { display: flex; flex-direction: column; gap: 0.45rem; }
+.g-footer-links a { color: var(--white); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+.g-footer-links a:hover { color: var(--yellow); }
+.g-footer-bottom {
+  border-top: 1px solid #4a4a4a; padding-top: 1rem; padding-bottom: 1.4rem;
+  font-size: 0.8rem;
+}
+
+/* ---------- inner pages ---------- */
+.g-pageband {
+  background-size: cover;
+  background-position: center 62%;
+  padding: 4rem 0;
+}
+.g-pageband h1 {
+  color: var(--white); text-transform: uppercase; font-weight: 800;
+  font-size: clamp(1.8rem, 4vw, 2.8rem); margin: 0;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+}
+.g-pageband p {
+  margin: 0.4rem 0 0; font-weight: 700; color: var(--yellow);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.g-prose { max-width: 760px; }
+.g-prose h2 {
+  color: var(--purple); text-transform: uppercase; font-weight: 700;
+  font-size: 1.4rem; margin: 2.2rem 0 0.8rem;
+  padding-bottom: 0.3rem; border-bottom: 4px solid var(--yellow);
+}
+.g-prose a { color: var(--purple); font-weight: 700; }
+.g-prose a:hover { background: var(--yellow); }
+.g-prose ul { list-style: none; padding-left: 0; }
+.g-prose ul li { padding-left: 1.3rem; position: relative; margin-bottom: 0.5rem; }
+.g-prose ul li::before {
+  content: "▸"; position: absolute; left: 0; color: var(--pink); font-weight: 800;
+}
+.g-prose blockquote {
+  border-left: 6px solid var(--pink); background: var(--pink-soft);
+  margin-left: 0; padding: 0.8rem 1.2rem; border-radius: 0 8px 8px 0;
+  font-style: italic; color: var(--char);
+}

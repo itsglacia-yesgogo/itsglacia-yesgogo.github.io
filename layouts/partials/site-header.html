@@ -1,0 +1,25 @@
+{{ partial "glacias/nav.html" . }}
+{{ if .IsHome }}
+<section class="g-hero" style="background-image: linear-gradient(160deg, rgba(8,13,26,0.78) 0%, rgba(10,18,36,0.45) 45%, rgba(8,13,26,0.82) 100%), url('{{ "images/flight.jpg" | relURL }}');">
+  <div class="g-container g-hero-inner">
+    <div class="g-hero-text">
+      {{ with .Params.hero_kicker }}<p class="g-kicker">{{ . }}</p>{{ end }}
+      <h1 class="g-hero-title">{{ .Params.description | default .Title }}</h1>
+      {{ with .Params.hero_text }}<p class="g-hero-sub">{{ . }}</p>{{ end }}
+      {{ with .Params.fields }}<p class="g-hero-fields">{{ . }}</p>{{ end }}
+      <p class="g-hero-ctas">
+        {{ range .Params.cta }}
+          <a class="g-btn" href="{{ .url | relLangURL }}">{{ .text }} ▸</a>
+        {{ end }}
+      </p>
+    </div>
+  </div>
+</section>
+{{ else }}
+<section class="g-pageband" style="background-image: linear-gradient(160deg, rgba(8,13,26,0.82) 0%, rgba(10,18,36,0.6) 60%, rgba(8,13,26,0.85) 100%), url('{{ "images/flight.jpg" | relURL }}');">
+  <div class="g-container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,26 @@
+<div class="g-topbar">
+  <div class="g-container g-topbar-inner">
+    <span class="g-topbar-mail"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></span>
+    <span class="g-topbar-social">
+      <a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">Instagram</a>
+      <a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+  </div>
+</div>
+<nav class="g-nav">
+  <div class="g-container g-nav-inner">
+    <a class="g-logo" href="{{ .Site.Home.RelPermalink }}">GLACIAS</a>
+    <div class="g-menu">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+      <span class="g-langs">
+        {{ if .IsTranslated }}
+          {{ range .Translations }}
+            <a href="{{ .RelPermalink }}" lang="{{ .Language.LanguageCode }}">{{ .Language.LanguageName }}</a>
+          {{ end }}
+        {{ end }}
+      </span>
+    </div>
+  </div>
+</nav>

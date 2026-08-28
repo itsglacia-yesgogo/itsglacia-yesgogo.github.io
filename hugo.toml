@@ -1,0 +1,96 @@
+# GLACIAS — Hugo + Ananke (v2.12.0, vendored in themes/)
+# Replace baseURL once the GitHub repo exists:
+#   user site  -> https://<username>.github.io/
+#   repo site  -> https://<username>.github.io/<repo>/
+baseURL = "https://example.github.io/glacias-site/"
+title = "GLACIAS"
+theme = "ananke"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
+[params]
+  custom_css = ["custom.css"]
+  email = "yesglacia@gmail.com"
+  instagram = "https://www.instagram.com/itsglacia_yesgogo/"
+  linkedin = "https://www.linkedin.com/in/glacia-hung/"
+
+[params.ananke]
+  show_recent_posts = false
+
+[taxonomies]
+  tag = "tags"
+
+# ----------------------- Languages -----------------------
+
+[languages.en]
+  languageName = "EN"
+  weight = 1
+  title = "GLACIAS"
+  [languages.en.params]
+    description = "I explore. I create. I connect."
+  [[languages.en.menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "Projects"
+    pageRef = "/projects"
+    weight = 2
+  [[languages.en.menu.main]]
+    name = "Content"
+    pageRef = "/journal"
+    weight = 3
+  [[languages.en.menu.main]]
+    name = "Resources"
+    pageRef = "/resources"
+    weight = 4
+
+[languages.zh-tw]
+  languageCode = "zh-TW"
+  languageName = "中文"
+  weight = 2
+  title = "GLACIAS"
+  [languages."zh-tw".params]
+    description = "我探索，我創造，我連結。"
+  [[languages."zh-tw".menu.main]]
+    name = "關於我"
+    pageRef = "/about"
+    weight = 1
+  [[languages."zh-tw".menu.main]]
+    name = "專案"
+    pageRef = "/projects"
+    weight = 2
+  [[languages."zh-tw".menu.main]]
+    name = "內容"
+    pageRef = "/journal"
+    weight = 3
+  [[languages."zh-tw".menu.main]]
+    name = "資源"
+    pageRef = "/resources"
+    weight = 4
+
+[languages.es]
+  languageCode = "es"
+  languageName = "ES"
+  weight = 3
+  title = "GLACIAS"
+  [languages.es.params]
+    description = "Exploro. Creo. Conecto."
+  [[languages.es.menu.main]]
+    name = "Sobre mí"
+    pageRef = "/about"
+    weight = 1
+  [[languages.es.menu.main]]
+    name = "Proyectos"
+    pageRef = "/projects"
+    weight = 2
+  [[languages.es.menu.main]]
+    name = "Contenido"
+    pageRef = "/journal"
+    weight = 3
+  [[languages.es.menu.main]]
+    name = "Recursos"
+    pageRef = "/resources"
+    weight = 4

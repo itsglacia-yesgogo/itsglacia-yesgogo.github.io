@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+{{ with .Params.quote }}
+<section class="g-band-dark">
+  <div class="g-container g-band-inner">
+    <p class="g-quote">{{ . }}</p>
+    {{ with $.Params.quote_cta }}<a class="g-btn" href="{{ .url | relLangURL }}">{{ .text }} ▸</a>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.whatido }}
+<section class="g-section">
+  <div class="g-container">
+    <h2 class="g-h2">{{ $.Params.whatido_title }}</h2>
+    <div class="g-cards">
+      {{ range . }}
+        <div class="g-card">
+          <h3>{{ .title }}</h3>
+          <p>{{ .desc }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.journey }}
+<section class="g-journey">
+  <div class="g-container">
+    <h2 class="g-h2 g-h2-light">{{ $.Params.journey_title }}</h2>
+    <div class="g-timeline">
+      {{ range . }}
+        <div class="g-tl-item">
+          <span class="g-tl-year">{{ .year }}</span>
+          <span class="g-tl-what">{{ .what }}</span>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ if .Params.follow_title }}
+<section class="g-follow">
+  <div class="g-container">
+    <h2 class="g-h2">{{ .Params.follow_title }}</h2>
+    {{ with .Params.follow_text }}<p>{{ . }}</p>{{ end }}
+    <a class="g-btn g-btn-big" href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener">@itsglacia_yesgogo ▸</a>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Content }}
+<section class="g-section">
+  <div class="g-container g-prose">{{ . }}</div>
+</section>
+{{ end }}
+
+{{ end }}
