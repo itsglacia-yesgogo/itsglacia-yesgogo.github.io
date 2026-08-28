@@ -2,7 +2,7 @@
 # Replace baseURL once the GitHub repo exists:
 #   user site  -> https://<username>.github.io/
 #   repo site  -> https://<username>.github.io/<repo>/
-baseURL = "https://itsglacia-yesgogo.github.io/itsglacia-yesgogo/"
+baseURL = "https://itsglacia-yesgogo.github.io/"
 title = "GLACIAS"
 theme = "ananke"
 
