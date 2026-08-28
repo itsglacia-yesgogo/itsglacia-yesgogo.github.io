@@ -1,9 +1,9 @@
 ---
-title: "GLACIAS"
+title: "itsglacia.yesgogo"
 description: "I explore. I create. I connect."
-hero_kicker: "嗨，我是 Yes，也就是 Glacia。"
-hero_text: "我是一名行銷與專案工作者，也是一個持續探索世界的人。我喜歡從一個想法開始，透過內容、行銷、活動與國際交流，把它一步一步變成真的。"
-fields: "Marketing｜Content｜Events｜International"
+hero_kicker: "嗨，我是 Glacia。"
+hero_text: "我在行銷、運動、內容與社群之間工作，也持續探索世界。我喜歡把國際經驗轉化成想法、專案、故事與連結。"
+fields: "Marketing｜Sports｜Content｜Community"
 cta:
   - text: "關於我"
     url: "/about/"
@@ -13,16 +13,16 @@ quote: "我旅行不是為了找到世界，而是為了找到自己。"
 quote_cta:
   text: "我的故事"
   url: "/about/"
-whatido_title: "我能做什麼"
+whatido_title: "我在做什麼"
 whatido:
   - title: "Marketing"
-    desc: "品牌行銷 · Social Media · Campaign · Content"
-  - title: "Events"
-    desc: "活動企劃 · 專案執行 · Community · 國際活動"
+    desc: "品牌行銷 · 社群經營 · Campaign · Content"
+  - title: "Sports"
+    desc: "運動行銷 · 健身 · 國際運動專案"
   - title: "Content"
     desc: "短影音 · 社群內容 · Storytelling · 個人品牌"
-  - title: "International"
-    desc: "國際交流 · 青年計畫 · 跨文化專案 · 社群經營"
+  - title: "Community"
+    desc: "活動企劃 · Networking · 國際交流 · 社群建立"
 journey_title: "我的旅程"
 journey:
   - year: "2023"
@@ -40,5 +40,5 @@ journey:
   - year: "2026"
     what: "青年百億 × 西班牙"
 follow_title: "跟著我的旅程"
-follow_text: "旅行、專案與時區之間的日常——一切都先出現在 Instagram。"
+follow_text: "旅行、專案、運動與時區之間的日常——一切都先出現在 Instagram。"
 ---
