@@ -1,4 +1,4 @@
-# GLACIAS — Hugo + Ananke (v2.12.0, vendored in themes/)
+# Itsglacia.yesgogo — Hugo + Ananke (v2.12.0, vendored in themes/)
 # Replace baseURL once the GitHub repo exists:
 #   user site  -> https://<username>.github.io/
 #   repo site  -> https://<username>.github.io/<repo>/
@@ -14,7 +14,6 @@ enableRobotsTXT = true
   custom_css = ["custom.css"]
   email = "yesglacia@gmail.com"
   instagram = "https://www.instagram.com/itsglacia_yesgogo/"
-  linkedin = "https://www.linkedin.com/in/glacia-hung/"
 
 [params.ananke]
   show_recent_posts = false
@@ -27,7 +26,7 @@ enableRobotsTXT = true
 [languages.en]
   languageName = "EN"
   weight = 1
-  title = "GLACIAS"
+  title = "Itsglacia.yesgogo"
   [languages.en.params]
     description = "I explore. I create. I connect."
   [[languages.en.menu.main]]
@@ -51,7 +50,7 @@ enableRobotsTXT = true
   languageCode = "zh-TW"
   languageName = "中文"
   weight = 2
-  title = "GLACIAS"
+  title = "Itsglacia.yesgogo"
   [languages."zh-tw".params]
     description = "我探索，我創造，我連結。"
   [[languages."zh-tw".menu.main]]
@@ -75,7 +74,7 @@ enableRobotsTXT = true
   languageCode = "es"
   languageName = "ES"
   weight = 3
-  title = "GLACIAS"
+  title = "Itsglacia.yesgogo"
   [languages.es.params]
     description = "Exploro. Creo. Conecto."
   [[languages.es.menu.main]]
