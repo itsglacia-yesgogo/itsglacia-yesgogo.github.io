@@ -3,7 +3,7 @@
 #   user site  -> https://<username>.github.io/
 #   repo site  -> https://<username>.github.io/<repo>/
 baseURL = "https://itsglacia-yesgogo.github.io/"
-title = "GLACIAS"
+title = "Itsglacia.yesgogo"
 theme = "ananke"
 
 defaultContentLanguage = "en"
